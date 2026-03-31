@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tournaments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Tournaments 🏆</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="games.html">Games</a>
+        <a href="tournament.html">Tournaments</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>🔥 Ongoing Tournaments</h2>
+
+    <div class="container">
+
+        <div class="card">
+            <h3>BGMI Championship</h3>
+            <p>Join intense battle royale matches.</p>
+            <p>Prize Pool: ₹5000 💰</p>
+            <a href="#" class="btn">Register Now</a>
+        </div>
+
+        <div class="card">
+            <h3>Valorant Scrims</h3>
+            <p>Compete with top players.</p>
+            <p>Prize Pool: ₹3000 🎯</p>
+            <a href="#" class="btn">Register Now</a>
+        </div>
+
+        <div class="card">
+            <h3>COD Mobile Clash</h3>
+            <p>Fast-paced FPS tournament.</p>
+            <p>Prize Pool: ₹2000 ⚡</p>
+            <a href="#" class="btn">Register Now</a>
+        </div>
+
+        <div class="card">
+    <h3>Register for Tournament 🏆</h3>
+
+    <form onsubmit="showMessage(event)">
+        <input type="text" placeholder="Enter your name" required><br><br>
+
+        <input type="email" placeholder="Enter your email" required><br><br>
+
+        <select required>
+            <option value="">Select Game</option>
+            <option>BGMI</option>
+            <option>Valorant</option>
+            <option>COD Mobile</option>
+        </select><br><br>
+
+        <button type="submit" class="btn">Register</button>
+    </form>
+
+    <p id="msg" style="color: lime;"></p>
+</div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Vardhan Gaming</p>
+</footer>
+<script>
+function showMessage(event) {
+    event.preventDefault();
+    document.getElementById("msg").innerText = "✅ Registered Successfully!";
+}
+</script>
+</body>
+</html>
