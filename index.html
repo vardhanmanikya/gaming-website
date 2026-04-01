@@ -7,7 +7,7 @@
   
 </head>
 <body>
-
+<div id="loader">Loading...</div>
 <header>
     <h1>Vardhan Gaming Hub 🎮</h1>
     <nav>
@@ -17,6 +17,7 @@
         <a href="tournament.html">Tournaments</a>
         <a href="contact.html">Contact</a>
     </nav>
+    <button onclick="toggleMode()" class="btn">Toggle Mode</button>
 </header>
 
 <section>
@@ -52,6 +53,25 @@ function typeEffect() {
     }
 }
 typeEffect();
+</script>
+<script>
+window.addEventListener("load", function() {
+    document.getElementById("loader").style.display = "none";
+});
+</script>
+<audio id="clickSound" src="click.mp3"></audio>
+
+<script>
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.getElementById("clickSound").play();
+    });
+});
+</script>
+<script>
+function toggleMode() {
+    document.body.classList.toggle("light");
+}
 </script>
 </body>
 </html>

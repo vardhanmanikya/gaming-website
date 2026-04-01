@@ -16,6 +16,7 @@
         <a href="tournament.html">Tournaments</a>
         <a href="contact.html">Contact</a>
     </nav>
+    <button onclick="toggleMode()" class="btn">Toggle Mode</button>
 </header>
 
 <section>
@@ -29,6 +30,10 @@
 <footer>
     <p>© 2026 Vardhan Gaming</p>
 </footer>
-
+<script>
+function toggleMode() {
+    document.body.classList.toggle("light");
+}
+</script>
 </body>
 </html>

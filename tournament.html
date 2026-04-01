@@ -16,6 +16,7 @@
         <a href="tournament.html">Tournaments</a>
         <a href="contact.html">Contact</a>
     </nav>
+    <button onclick="toggleMode()" class="btn">Toggle Mode</button>
 </header>
 
 <section>
@@ -77,5 +78,16 @@ function showMessage(event) {
     document.getElementById("msg").innerText = "✅ Registered Successfully!";
 }
 </script>
+<script>
+function toggleMode() {
+    document.body.classList.toggle("light");
+}
+</script>
+<div class="card">
+    <h3>Top Players 🏆</h3>
+    <p>1. Vardhan - 1500 pts</p>
+    <p>2. PlayerX - 1200 pts</p>
+    <p>3. GamerPro - 1000 pts</p>
+</div>
 </body>
 </html>
